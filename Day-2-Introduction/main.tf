@@ -1,6 +1,6 @@
 resource "aws_instance" "name" {
-  ami = "ami-05ffe3c48a9991133"
-  instance_type = "t2.micro"
+  ami = var.ami_id
+  instance_type = var.instance_type
   tags = {
     Name = "day-2"
   }
